@@ -19,7 +19,7 @@ export const TextInput = forwardRef((
     return (
         <div className="flex flex-col">
         <label className="font-light text-lg text-white">{label}</label>
-        <input ref={ref} className={className} type={type} placeholder={placeholder}/>
+        <input ref={ref} className={className} type={type} placeholder={placeholder} required/>
         </div>
     )
 })

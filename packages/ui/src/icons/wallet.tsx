@@ -6,8 +6,8 @@ export const WalletIcon = () => {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            width="35px"
-            height="35px"
+            width="40px"
+            height="40px"
         >
             <path
                 strokeLinecap="round"

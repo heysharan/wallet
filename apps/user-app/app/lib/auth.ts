@@ -4,7 +4,7 @@ import argon2 from 'argon2';
 import { JWT } from 'next-auth/jwt'
 import { Session } from 'next-auth'
 
-export const NEXT_AUTH = {
+export const authOptions = {
     providers: [
         CredentialsProvider({
             credentials: {

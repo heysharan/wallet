@@ -18,14 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${geist.className} bg-black min-h-screen text-white`}>
-        <Provider>
+      <Provider>
+        <body className={`${geist.className} bg-black min-h-screen text-white`}>
           <div className="max-w-screen-xl mx-auto px-4">
             {children}
             <Toaster />
           </div>
-        </Provider>
-      </body>
+        </body>
+      </Provider>
     </html>
   );
 }

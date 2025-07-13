@@ -11,7 +11,7 @@ interface AppBarProps {
 
 export const AppBar = ({ user, onSignIn, onSignOut }: AppBarProps) => {
     return (
-        <div className="flex justify-between my-10">
+        <div className="flex justify-between my-5">
             <div className="flex items-center justify-center gap-2">
                 <WalletIcon />
                 <p className="font-semibold text-white text-3xl">Wallet</p>

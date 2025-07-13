@@ -1,14 +1,13 @@
-"use client"
-import { useBalance } from '@repo/store/src/hooks/useBalance'
-import { AppBar } from '@repo/ui/components/Appbar'
-import { signIn, signOut, useSession } from 'next-auth/react';
+import { getServerSession } from "next-auth";
+import { authOptions } from "./lib/auth";
+import { redirect } from "next/navigation";
 
-export default function Page() {
-  const balance = useBalance();
-  const session = useSession();
-  return (
-    <main>
-        <AppBar user={session.data?.user} onSignIn={signIn} onSignOut={signOut} />
-    </main>
-  );
+export default async function Page() {
+  const session = await getServerSession(authOptions)
+  if (session?.user) {
+    redirect('/dashboard')
+  }
+  else {
+    redirect("/signin")
+  }
 }

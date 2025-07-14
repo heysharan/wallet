@@ -52,7 +52,7 @@ export const authOptions = {
         })
     ],
     secret: process.env.NEXTAUTH_SECRET,
-    callback: {
+    callbacks: {
         async session({ token, session }: {token: JWT, session: Session}) {
             if(token.sub && session.user){
             session.user.id = token.sub

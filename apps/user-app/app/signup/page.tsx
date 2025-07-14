@@ -2,7 +2,7 @@
 import { Button } from "@repo/ui/components/Button";
 import { TextInput } from "@repo/ui/components/text-input";
 import { useRef } from "react";
-import { signup } from "../actions/signup";
+import { signup } from "../lib/actions/signup";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import Link from "next/link";

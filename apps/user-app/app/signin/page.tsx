@@ -2,7 +2,7 @@
 import { signIn } from "next-auth/react";
 import { useRef } from "react";
 import { TextInput } from "@repo/ui/components/text-input";
-import { Button } from "@repo/ui/button";
+import { Button } from "@repo/ui/components/Button";
 import Link from "next/link";
 
 export default function Signin() {
